@@ -1,6 +1,6 @@
 # Monty Hall Problem
 
-Simulation notebook exploring the Monty Hall problem using Monte Carlo methods.
+A simulation-based exploration of the Monty Hall problem, investigating why switching doors yields a higher probability of winning and how simulated results converge to theoretical probabilities.
 
 ## References
 
@@ -12,4 +12,10 @@ Simulation notebook exploring the Monty Hall problem using Monte Carlo methods.
 - Conditional Probability
 - Monte Carlo Simulation
 - Law of Large Numbers
+
+## Questions Explored
+
+- Does switching really improve the probability of winning?
+- Why does the intuitive 50-50 argument fail?
+- How quickly do simulated results converge to theoretical values?
 
