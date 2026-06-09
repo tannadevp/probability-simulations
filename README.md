@@ -8,23 +8,21 @@ The idea is simple: instead of just accepting a mathematical result, simulate it
 ## Simulations
 
 ### 01) Monty Hall Problem
-The one where switching doors doubles your chances, and almost nobody believes it until they see the numbers.
-The simulation runs 100,000 games of the Monty Hall problem and tracks the win rate of two strategies — Stay and Switch. It also includes a convergence plot showing how the win rates stabilise as more games are played, which is the Law of Large Numbers in action.
-
-**Result:** Switch wins ~66.7% of the time. Stay wins ~33.3%.
+Switch or stay? The simulation runs 100,000 games and tracks win rates for both strategies, alongside a convergence plot showing the Law of Large Numbers in action.  
+Result: Switch wins ~66.7%. Stay wins ~33.3%.
 
 ### 02) Random Walks
-A walker starts at 0 and moves left or right with equal probability at every step. The question is: where do they end up after n steps?
-The intuitive answer is "probably near zero." The actual answer is that the typical distance from zero grows as √n — which is not obvious and takes a simulation to really appreciate.
-Includes sample trajectory plots, a histogram of final positions (which converges to a normal distribution, a preview of the CLT), and an RMS displacement vs. steps scaling plot confirming the √n law.
+A walker at 0 moves ±1 each step with equal probability. Where do they end up after n steps? Includes trajectory plots, a histogram of final positions (converging to a normal distribution), and a scaling plot confirming the √n RMS displacement law.  
+Result: Expected displacement = 0. Typical displacement = √n.
 
-**Result:** Expected displacement = 0. Typical displacement = √n.
+### 03) Gambler's Ruin
+A gambler with ₹k plays fair-or-biased ₹1 rounds against a wealthier opponent until one goes broke. Even a perfectly fair game gives only a k/N chance of survival. Includes ruin probability curves (simulated vs. theoretical), game duration histograms, and wealth trajectory plots.  
+Result: P(survival) = k/N for fair game. Decays exponentially when p < 0.5.
 
 ---
 
 ## Coming Soon
 
-- **Gambler's Ruin**
 - **The Kelly Criterion**
 - **Central Limit Theorem** 
 - **Markov Chains** 
@@ -36,7 +34,7 @@ Includes sample trajectory plots, a histogram of final positions (which converge
 ```
 Python 3
 Jupyter Notebook
-random · matplotlib
+random · matplotlib · math 
 ```
 
 No heavy dependencies. Everything is built with the standard library and matplotlib, deliberately, so the logic stays visible.
