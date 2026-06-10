@@ -19,12 +19,15 @@ Result: Expected displacement = 0. Typical displacement = √n.
 A gambler with ₹k plays fair-or-biased ₹1 rounds against a wealthier opponent until one goes broke. Even a perfectly fair game gives only a k/N chance of survival. Includes ruin probability curves (simulated vs. theoretical), game duration histograms, and wealth trajectory plots.  
 Result: P(survival) = k/N for fair game. Decays exponentially when p < 0.5.
 
+### 04) Central Limit Theorem
+Take any distribution — skewed, flat, or already normal. Sample from it repeatedly and compute the mean each time. The distribution of those means always converges to a bell curve. Always. Demonstrated across three source distributions (exponential, uniform, normal), with a side-by-side comparison at n=30 and a standard error scaling plot confirming σ/√n.  
+Result: Shape of source does not matter; sample means converge to N(μ, σ²/n).
+
 ---
 
 ## Coming Soon
 
 - **The Kelly Criterion**
-- **Central Limit Theorem** 
 - **Markov Chains** 
 
 ---
